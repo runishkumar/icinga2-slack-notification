@@ -11,7 +11,8 @@ NOTE: _This setup steps assumes that `/etc/icinga2` is icinga2 config directory.
 5. Add contents of conf.d/notifications.conf to icinga notifications conf file (/etc/icinga2/conf.d/notifications.conf).
 6. Add contents of conf.d/commands.conf to icinga commands conf file (/etc/icinga2/conf.d/commands.conf).
 7. And finally add slack variable to all host and services for which you want to enable slack notifications.
-For example: Below code will enable slack notification for all http check for vhost. Because it defines `vars.notify = true`.
+
+For example: Below code will enable slack notification for all http check for vhost. Because it defines `vars.notify_slack = true`.
 ```
 apply Service for (http_vhost => config in host.vars.http_vhosts) {
   import "generic-service"
