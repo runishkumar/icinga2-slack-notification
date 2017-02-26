@@ -2,8 +2,7 @@
 
 <?php
 // Slack incoming webhooks url
-//define('SLACK_WEBHOOK_URL', 'https://hooks.slack.com/services/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');
-define('SLACK_WEBHOOK_URL', 'https://hooks.slack.com/services/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');
+define('SLACK_WEBHOOK_URL', 'https://hooks.slack.com/services/XXXXXXXX/XXXXXXXX/XXXXXXXXXXXXXX');
 
 try {
     // u => username
